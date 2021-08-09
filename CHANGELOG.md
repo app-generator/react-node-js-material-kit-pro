@@ -1,5 +1,12 @@
 # Change Log
 
+
+## [1.0.1] 2021-08-09
+### Improvements
+
+- Show contextual menus on `navbar`
+    - Links to private pages are hidden for guest users 
+
 ## [1.0.0] 2021-08-06
 ### Initial Release
 
