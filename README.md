@@ -30,7 +30,7 @@ Material Dashboard PRO React is a Premium Material-UI Admin created using **crea
 
 To use the product Node JS (>= 12.x) is required and GIT to clone/download the project from the public repository.
 
-**Step #1** - Clone the project
+**Step #1** - Clone the project (private repository)
 
 ```bash
 $ git clone https://github.com/app-generator/priv-react-material-kit-pro.git
@@ -156,14 +156,14 @@ Authentication Flow uses [json web tokens](https://jwt.io) via Passport library 
 
 ### How to use the code
 
-**Clone the sources**
+**Step #1** - Clone the project (private repository)
 
 ```bash
 $ git clone https://github.com/app-generator/priv-api-server-nodejs-pro.git
 $ cd priv-api-server-nodejs-pro
 ```
 
-**Install dependencies** via NPM or Yarn
+**Step #2** - Install dependencies via NPM or yarn
 
 ```bash
 $ npm i
@@ -171,13 +171,13 @@ $ npm i
 $ yarn
 ```
 
-**Run the SQLite migration**
+**Step #3** - Run the SQLite migration (via TypeORM)
 
 ```
 $ yarn typeorm migration:run
 ```
 
-**Start the API server** - development mode
+**Step #4** - Start the API server (development mode)
 
 ```bash
 $ npm dev
@@ -185,7 +185,7 @@ $ npm dev
 $ yarn dev
 ```
 
-**Production Build** - files generated in `build` directory
+**Step #5** - Production Build (files generated in `build` directory)
 
 ```bash
 $ npm build
@@ -193,7 +193,7 @@ $ npm build
 $ yarn build
 ```
 
-**Start the API server** - for production (files served from `build/index.js`)
+**Step #5** - Start the API server for production (files served from `build/index.js`)
 
 ```bash
 $ npm start
