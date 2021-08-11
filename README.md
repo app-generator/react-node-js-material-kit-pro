@@ -1,4 +1,4 @@
-# [React Node Material Kit PRO](https://appseed.us/product/react-node-js-material-kit-pro)
+# React Material Kit PRO
 
 Material Dashboard PRO React is a Premium Material-UI Admin created using **create-react-app** with a fresh, new design inspired by Google's Material Design. The product comes with a simple JWT authentication flow: **login/register/logout** powered by a [Node JS API Server](https://github.com/app-generator/api-server-nodejs-pro) (PRO version). 
 
@@ -9,18 +9,15 @@ Material Dashboard PRO React is a Premium Material-UI Admin created using **crea
 - Premium Material UI design - Designed by [Creative-Tim](https://bit.ly/3fKQZaL/)
 - React, Redux, Redux-persist
 - Authentication: JWT Login/Register/Logout
-- [Node JS API server](https://github.com/app-generator/api-server-nodejs-pro) for a complete full-stack experience 
+- For a complete full-stack experience, this UI can be used with:
+  - [Django API Server](https://docs.appseed.us/boilerplate-code/api-server/django) - open-source product
+  - [Flask API Server](https://docs.appseed.us/boilerplate-code/api-server/flask) - open-source product
+  - [Node JS API Server](https://docs.appseed.us/boilerplate-code/api-server/node-js) - open-source product / Typescript / SQLite / TypeORM / Joy for validation
+  - [Node JS API Server PRO](https://github.com/app-generator/api-server-nodejs-pro) - **commercial product**
+      - SQLite / TypeORM / Joy / Docker
+      - MongoDB / Mongoose / Joy Docker (separate branch, same project)
 
 <br />
-
-> Links
-
-- [React Node Material Kit PRO](https://appseed.us/product/react-node-js-material-kit-pro) - product page
-- [React Node Material Kit PRO](https://react-node-js-material-kit-pro.appseed-srv1.com) - LIVE Demo
-- [Node JS API Server PRO](https://github.com/app-generator/api-server-nodejs-pro) (PRO version) - the backend server 
-- Support via **Github** (issues tracker) and [Discord](https://appseed.us/support) - LIVE Assistance 
-
-<br >
 
 ![React Node Material Kit PRO - Full-stack product built in React and Node JS by AppSeed and Creative-Tim.](https://user-images.githubusercontent.com/51070104/128535389-a09c68c2-02ec-4eb9-bad9-6bafcee85b10.png)
 
@@ -30,7 +27,7 @@ Material Dashboard PRO React is a Premium Material-UI Admin created using **crea
 
 To use the product Node JS (>= 12.x) is required and GIT to clone/download the project from the public repository.
 
-**Step #1** - Clone the project (private repository)
+**Step #1** - Clone the project
 
 ```bash
 $ git clone https://github.com/app-generator/priv-react-material-kit-pro.git
@@ -121,93 +118,15 @@ const axios = Axios.create({
 
 <br />
 
-> **API Server Descriptor** - POSTMAN Collection
+> **API Descriptor** 
 
-The API Server definition is provided by the [Nodejs API Server](https://github.com/app-generator/api-server-nodejs)
+The product uses implements a **Unified API definition** exposed by all API servers crafted by AppSeed. For more information, please access the official documentation:
 
-- [API POSTMAN Collection](https://github.com/app-generator/api-server-nodejs/blob/master/media/api.postman_collection.json) - can be used to mock (simulate) the backend server or code a new one in your preferred framework. 
+- All [API Servers](https://docs.appseed.us/boilerplate-code/api-server) - the full index
+- [Unified API Definition](https://docs.appseed.us/boilerplate-code/api-server/api-unified-definition) - methods implemented accross all servers
 
-<br />
-
-## Node JS API PRO
-
-Express / Nodejs Starter with JWT authentication, and **SQLite** or **MongoDB** persistance - Provided by **AppSeed** [App Generator](https://appseed.us/app-generator).
-Authentication Flow uses [json web tokens](https://jwt.io) via Passport library - `passport-jwt`.
-
-> Features:
-
-- Simple, intuitive codebase - can be extended with ease.  
-- Typescript
-- Data validation with Joy
-- Branches:
-    - **Master**: NodeJS / Express / SQLite / TypeORM
-    - **Mongo**:  NodeJS / Express / MongoDB / Mongoose
-- Auth: Passport / `passport-jwt` strategy 
-
-<br />
-
-> Requirements
-
-- [Node.js](https://nodejs.org/) >= 10.x
-- [SQLite](https://www.sqlite.org/index.html) - used by `master` branch
-- [MongoDB](https://www.mongodb.com/) server - used by `mongo` branch
-
-<br />
-
-### How to use the code
-
-**Step #1** - Clone the project (private repository)
-
-```bash
-$ git clone https://github.com/app-generator/priv-api-server-nodejs-pro.git
-$ cd priv-api-server-nodejs-pro
-```
-
-**Step #2** - Install dependencies via NPM or yarn
-
-```bash
-$ npm i
-// OR
-$ yarn
-```
-
-**Step #3** - Run the SQLite migration (via TypeORM)
-
-```
-$ yarn typeorm migration:run
-```
-
-**Step #4** - Start the API server (development mode)
-
-```bash
-$ npm dev
-// OR
-$ yarn dev
-```
-
-**Step #5** - Production Build (files generated in `build` directory)
-
-```bash
-$ npm build
-// OR
-$ yarn build
-```
-
-**Step #5** - Start the API server for production (files served from `build/index.js`)
-
-```bash
-$ npm start
-// OR
-$ yarn start
-```
-
-The API server will start using the `PORT` specified in `.env` file (default 5000)
-
-<br />
-
-![Node JS API - Open-source API server built on top of Express Nodejs Framework.](https://user-images.githubusercontent.com/51070104/124934824-c210a700-e00d-11eb-9d01-e05bd8bfb608.png)
 
 <br />
 
 ---
-[React Node Material Kit PRO](https://appseed.us/product/react-node-js-material-kit-pro) - Provided by [Creative-Tim](https://bit.ly/3fKQZaL/) and **AppSeed [App Generator](https://appseed.us/app-generator)**. 
+React Material Kit PRO - Provided by [Creative-Tim](https://bit.ly/3fKQZaL/) and **AppSeed [App Generator](https://appseed.us/app-generator)**. 
