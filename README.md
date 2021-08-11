@@ -1,6 +1,6 @@
-# React Material Kit PRO
+# React Node Material Kit PRO
 
-Material Dashboard PRO React is a Premium Material-UI Admin created using **create-react-app** with a fresh, new design inspired by Google's Material Design. The product comes with a simple JWT authentication flow: **login/register/logout** powered by a [Node JS API Server](https://github.com/app-generator/api-server-nodejs-pro) (PRO version). 
+**[Material Kit PRO React](https://appseed.us/product/react-node-js-material-kit-pro)** features over 1000 individual components, giving you the freedom of choosing and combining. The product comes with a simple JWT authentication flow: **login/register/logout** powered by a [Node JS API Server](https://github.com/app-generator/api-server-nodejs-pro) (PRO version). 
 
 <br />
 
@@ -9,13 +9,9 @@ Material Dashboard PRO React is a Premium Material-UI Admin created using **crea
 - Premium Material UI design - Designed by [Creative-Tim](https://bit.ly/3fKQZaL/)
 - React, Redux, Redux-persist
 - Authentication: JWT Login/Register/Logout
-- For a complete full-stack experience, this UI can be used with:
-  - [Django API Server](https://docs.appseed.us/boilerplate-code/api-server/django) - open-source product
-  - [Flask API Server](https://docs.appseed.us/boilerplate-code/api-server/flask) - open-source product
-  - [Node JS API Server](https://docs.appseed.us/boilerplate-code/api-server/node-js) - open-source product / Typescript / SQLite / TypeORM / Joy for validation
-  - [Node JS API Server PRO](https://github.com/app-generator/api-server-nodejs-pro) - **commercial product**
-      - SQLite / TypeORM / Joy / Docker
-      - MongoDB / Mongoose / Joy Docker (separate branch, same project)
+- Backend Server- [Node JS API Server PRO](https://github.com/app-generator/api-server-nodejs-pro)
+    - SQLite / TypeORM / Joy / Docker
+    - MongoDB / Mongoose / Joy Docker (separate branch, same project)
 
 <br />
 
@@ -27,7 +23,7 @@ Material Dashboard PRO React is a Premium Material-UI Admin created using **crea
 
 To use the product Node JS (>= 12.x) is required and GIT to clone/download the project from the public repository.
 
-**Step #1** - Clone the project
+**Step #1** - Clone the project (private repository)
 
 ```bash
 $ git clone https://github.com/app-generator/priv-react-material-kit-pro.git
@@ -128,5 +124,70 @@ The product uses implements a **Unified API definition** exposed by all API serv
 
 <br />
 
+## API Server Node PRO
+
+Express / Nodejs Starter with JWT authentication, and SQLite or MongoDB persistance. Authentication Flow uses json web tokens via Passport library - passport-jwt.
+
+> Features
+
+- Simple, intuitive codebase - can be extended with ease.  
+- Typescript
+- Data validation with Joy
+- Branches:
+    - **Master**: NodeJS / Express / SQLite / TypeORM
+    - **Mongo**:  NodeJS / Express / MongoDB / Mongoose
+- Auth: Passport / `passport-jwt` strategy 
+
+<br />
+
+### How to use the code
+
+**Step #1** - Clone the project (private repository)
+
+```bash
+$ git clone https://github.com/app-generator/priv-api-server-nodejs.git
+$ cd priv-api-server-nodejs
+```
+
+**Step #2** - Install dependencies via NPM or yarn
+
+```bash
+$ npm i
+// OR
+$ yarn
+```
+
+**Step #3** - Run the SQLite migration via TypeORM
+
+```
+$ yarn typeorm migration:run
+```
+
+**Step #4** - Start the API server (development mode)
+
+```bash
+$ npm dev
+// OR
+$ yarn dev
+```
+
+**Step #5** - Production Build (files generated in `build` directory)
+
+```bash
+$ npm build
+// OR
+$ yarn build
+```
+
+**Step #6** - Start the API server for production (files served from `build/index.js`)
+
+```bash
+$ npm start
+// OR
+$ yarn start
+```
+
+The API server will start using the `PORT` specified in `.env` file (default 5000). 
+
 ---
-React Material Kit PRO - Provided by [Creative-Tim](https://bit.ly/3fKQZaL/) and **AppSeed [App Generator](https://appseed.us/app-generator)**. 
+React Node Material Kit PRO - Provided by [Creative-Tim](https://bit.ly/3fKQZaL/) and **AppSeed [App Generator](https://appseed.us/app-generator)**. 
