@@ -17,7 +17,7 @@ Material Dashboard PRO React is a Premium Material-UI Admin created using **crea
 
 - [React Node Material Kit PRO](https://appseed.us/product/react-node-js-material-kit-pro) - product page
 - [React Node Material Kit PRO](https://react-node-js-material-kit-pro.appseed-srv1.com) - LIVE Demo
-- [Node JS API Server](https://github.com/app-generator/api-server-nodejs-pro) (PRO version) - the backend server 
+- [Node JS API Server PRO](https://github.com/app-generator/api-server-nodejs-pro) (PRO version) - the backend server 
 - Support via **Github** (issues tracker) and [Discord](https://appseed.us/support) - LIVE Assistance 
 
 <br >
@@ -129,18 +129,79 @@ The API Server definition is provided by the [Nodejs API Server](https://github.
 
 <br />
 
-## Node JS API Server
+## Node JS API PRO
 
-The product is also open-source and cis already configured to work with Berry Dashboard Template - product features:
+Express / Nodejs Starter with JWT authentication, and **SQLite** or **MongoDB** persistance - Provided by **AppSeed** [App Generator](https://appseed.us/app-generator).
+Authentication Flow uses [json web tokens](https://jwt.io) via Passport library - `passport-jwt`.
 
-- Nodejs / Express server
-- JWT authentication (`passport-jwt` strategy)
-- Persistence: MongoDB 
+> Features:
 
-> Links
+- Simple, intuitive codebase - can be extended with ease.  
+- Typescript
+- Data validation with Joy
+- Branches:
+    - **Master**: NodeJS / Express / SQLite / TypeORM
+    - **Mongo**:  NodeJS / Express / MongoDB / Mongoose
+- Auth: Passport / `passport-jwt` strategy 
 
-- [Node JS API](https://github.com/app-generator/api-server-nodejs) - source code
-- [Node JS API](https://appseed.us/boilerplate-code) - product page
+<br />
+
+> Requirements
+
+- [Node.js](https://nodejs.org/) >= 10.x
+- [SQLite](https://www.sqlite.org/index.html) - used by `master` branch
+- [MongoDB](https://www.mongodb.com/) server - used by `mongo` branch
+
+<br />
+
+### How to use the code
+
+**Clone the sources**
+
+```bash
+$ git clone https://github.com/app-generator/priv-api-server-nodejs-pro.git
+$ cd priv-api-server-nodejs-pro
+```
+
+**Install dependencies** via NPM or Yarn
+
+```bash
+$ npm i
+// OR
+$ yarn
+```
+
+**Run the SQLite migration**
+
+```
+$ yarn typeorm migration:run
+```
+
+**Start the API server** - development mode
+
+```bash
+$ npm dev
+// OR
+$ yarn dev
+```
+
+**Production Build** - files generated in `build` directory
+
+```bash
+$ npm build
+// OR
+$ yarn build
+```
+
+**Start the API server** - for production (files served from `build/index.js`)
+
+```bash
+$ npm start
+// OR
+$ yarn start
+```
+
+The API server will start using the `PORT` specified in `.env` file (default 5000)
 
 <br />
 
